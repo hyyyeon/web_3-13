@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프데모</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Webdemo</div>
+        <ul class="nav">
+          <li>
+            <a herf="index.html">Home </a>
+          </li>
+          <li>
+            <a herf="about.html">About</a>
+          </li>
+
+          <li>
+            <a herf="about.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>웹프로그래밍</h1>
+        <h3>
+          웹개발자를 위한 <a href="https://www.w3schools.com">W3Schools</a>
+        </h3>
+
+        <h3>현재시간: <span id="time"></span></h3>
+
+        <hr />
+
+        <p>
+          배경색 바꾸기
+          <button onclick="pink()">Pink</button>
+          <button onclick="lightblue()">lightblue</button>
+          <button onclick="yellow()">yellow</button>
+          <button onclick="linen()">linen</button>
+        </p>
+        <p>
+          배워봅시다:
+          <button onmouseover="showhtml()" onmouseout="hide()">html5</button>
+          <button onmouseover="showcss()" onmouseout="hide()">css3</button>
+          <button onmouseover="showjs()" onmouseout="hide()">javascript</button>
+        </p>
+
+        <hr />
+        <br />
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

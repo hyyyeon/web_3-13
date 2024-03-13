@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5; /* 줄간격 */
+  color: #333;
+  background-color: linen;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* 위에 검정색부분 */
+.navbar {
+  background-color: black;
+  color: white;
+  height: 60px;
+}
+/* 검정색부분 글씨 위치?*/
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+/* home, about 간격 */
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* home 글씨크기 */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* home에 커서 올리면 생기는 밑줄 세로길이 */
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+  color: #ddd;
+}
+
+.main {
+  color: blue;
+  line-height: 2;
+}
+
+button {
+  padding: 2px 6px;
+  margin: 2px 4px;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: aquamarine;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+button:hover {
+  color: red;
+  background-color: yellow;
+}
