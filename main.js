@@ -1,4 +1,4 @@
-document.getElementById('time').innerHTML = new Date().toLocaleDateString();
+document.getElementById('time').innerHTML = new Date().toLocaleString();
 
 // 배경색 버튼
 function pink() {
