@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Webdemo</div>
+        <ul class="nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="formtest.html">Form Test</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+    <section class="main">
+      <div class="container">
+
+        <form>
+          <label for="fname">First Name:</label>
+          <!-- label for="fname": 사용자가 편하게? 칸 클릭 안해도? -->
+          <input type="text" name="fname" id="fname" value="John" />
+          <!-- value="John": 기본값이 John -->
+    
+          <br />
+          <label for="lname">Last name:</label>
+          <input type="text" name="iname" id="iname" />
+          <br />
+          <label for="pass">Password:</label>
+          <input type="password" name="passwd" id="pass" autofocus placeholder="패스워드 입력"/>
+          <!-- autofocus: 마우스 커서를 기본으로 이곳에 설정 -->
+          <br />
+          <input type="tel" />
+          
+          <!-- 박스 -->
+          <fieldset>
+            <legend>상품선택</legend>
+            <p>주문할 상품 선택</p>
+            <label for=""><input type="checkbox" value="s_3"> 선물용 3kg </label>
+
+            <label for=""><input type="checkbox" value="s_3"> 선물용 5kg </label>
+            <label for=""><input type="checkbox" value="s_3"> 가정용 3kg </label>
+            <label for=""><input type="checkbox" value="s_3"> 가정용 5kg </label>
+
+            <P>포장선택</P>
+            <!-- type="radio": 둘중에 하나만 선택. name=""이 같아야함 -->
+            <label for=""><input type="radio" name="gift" value="yes"> 선물포장 </label>
+            <label for=""><input type="radio" name="gift" value="no"> 선물포장 안함 </label>
+
+            <label>선물용 3kg</label>
+            <input type="number" min="0" max="5" />
+            <input type="range" min="0" max="10" value="1" step="2" />
+            <input type="date" name="date" />
+            <input type="month" name="date" />
+            <input type="time" name="date" />
+            <input type="datetime-local" name="date" />
+
+            <br>
+            <input type="submit" value="제출하기" />
+            <input type="reset" value="초기화" />
+            <input type="button" value="버튼테스트" />
+
+            <input type="hidden" name="비밀정보" value="비밀정보 보냅니다" />
+          </fieldset>
+        </form>
+    
+      </section>
+      </div>
+  </body>
+</html>
